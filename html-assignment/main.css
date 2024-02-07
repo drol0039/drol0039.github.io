@@ -2,16 +2,16 @@
 
 body{font-family: "Arial", "Helvetica", sans-serif;
     font-size: 18px; 
-    background-color: #7DB4D3;
+    background-color: #F9EFE1;
 
 }
 
-.site-title{ color: #ffffff;}
+.site-title{ color: #3987AA;}
 
 #my-image {box-shadow: 0px 0px 2px 1px black  ; }
 
 ul.a { list-style-type: square; }
-.a li:nth-child(odd){background-color: #ADDDF2;}
+.a li:nth-child(odd){background-color: #97EEF7;}
 
 .link{text-decoration-line: none; background-color: #ADDDF2; padding: 5px;}
 
