@@ -2,19 +2,21 @@
 
 body{font-family: "Arial", "Helvetica", sans-serif;
     font-size: 18px; 
-    background-color: #F9EFE1;
-
 }
+    /* for background-color: #F9EFE1;*/
 
-.site-title{ color: #3987AA;}
+
+.site-title{ background-color: #3987AA;  padding: 6px; color:white; }
 
 #my-image {box-shadow: 0px 0px 2px 1px black  ; }
 
 ul.a { list-style-type: square; }
 .a li:nth-child(odd){background-color: #97EEF7;}
 
-.link{text-decoration-line: none; background-color: #ADDDF2; padding: 5px;}
+.link{text-decoration-line: none; background-color: #ADDDF2; padding: 5px;
+    border: solid 2px #3987AA; border-radius: 8px;/*角の丸み*/}
 
-.link:hover{background-color: #BDEFAC;}
+.link:hover{background-color: #97EEF7;
+}
 
 ul.b{ list-style-type: none ;}
