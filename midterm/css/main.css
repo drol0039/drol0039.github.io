@@ -1,2 +1,14 @@
 body{font-family: Arial, Helvetica, sans-serif;
-background-color:#aad4cf;}
+    font-size: 16px;
+    background-color:#aad4cf;}
+
+.container{position: relative;}
+.container{max-width: 100%; 
+    margin: auto;}
+.container h1{position: absolute; color: white;top 50; left 50;-ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:0;}
+
+
