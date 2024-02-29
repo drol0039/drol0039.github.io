@@ -6,23 +6,33 @@
     <title>drol0039 midterm</title>
     <link href="css/main.css" rel="stylesheet">
 </head>
-<body>
-<header class="container">
-　<title>Lone Starfish</title>
+    
+<header>
+  <!--<img src="images/lone-starfish-wide.jpg" alt="lone-starfish-wide">-->
+　 <h1>Lone Starfish</h1> 
 </header>
-<nav> Home | STORY | CONTACT</nav>
+<div class="nav" id="nav">
+  <nav> 
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#stories">STORY</a></li>
+        <li><a href="#contacts">CONTACT</a></li>
 
- 
-    <main class="container">
+    </ul>
+  </nav>
+ </div>
 
     <!-- creates a header with an image and text-->
     <!-- wraps text aroound image using float-->
-    <h2 class="sub-headding">Life of a Starfish</h2>
-    <img src="images/lone-starfish.jpg" alt="lone-starfish" id="lone-starfish">
-    <article>
+    <article> 
+    <h2 > Life of Starfish</h2>
+    <img src="images/lone-starfish.jpg" alt="lone-starfish" class="lone-starfish">
+    <p id="stories">
         Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.
+    </p>
     <article>
-        <h1 class="sub headding">Facts About Starfish</h1>
+        <section id="Facts>" class="Facts">
+        <h2>Facts About Starfish</h2>
         <ul>
             <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. </li>
             <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.
@@ -30,38 +40,43 @@
             <li>Herring barbel Mexican golden trout, killifish bonito; northern anchovy. </li>
             <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
         </ul>
-        <h1 class="sub headding">Contact to lean more</h1>
-         <div class="form">
-            <div class="form-item">
-                <label>Your Name</label> 
-                <input type="text" class="Name">
-            </div>
-            <div class="form-item">
-                <label>Your Email</label>
-                <input type="email" class="Form-Item-Input" >
-            </div>
-            <div class="form-item">
+        </section>
+
+        <h2>Contact to lean more</h2>
+
+    <section id="contacts" class="contactssection">
+        <!--<form action="your-server-side-handler" method="post">-->
+            <form>
+                <label for="name">Your Name</label> 
+                <input type="text" id="name" name="name" required>
+           
+                <label for="email">Your Email</label> 
+                <input type="email" id="email" name="email" required>
+            
                 <label>Your Message</label>
-                <textarea class="Form-Item-Textarea"></textarea>
-            </div>
-        </form>
-            <H2>Would you like to visit the starfish?</h2>
-                <form action="index.html" method="post">
-                    <label for="yes">Yes</label>
-                    <input type="checkbox" id="yes" name="yes">
-                    
-                    <label for="no">No</label>
-                    <input type="checkbox" id="no" name="no">
+                <textarea type="text" id="message" name="message" required></textarea>
+
+                <label>Would you like to visit the starfish?</label>
+                <!--<fieldset class="radio-buttons"></fieldset-->
+                    <label>Yes</label>
+                    <input type="radio" name="visit" value="yes" required>
+                
+                    <label>No</label>
+                        <input type="radio" name="visit" value="no">
                   
-                    <label for="maybe">Maybe</label>
-                    <input type="checkbox" id="maybe" name="maybe">
-                  </form>
-                <div>
-                    <input type="submit" class="Form-Btn" value="SEND">
-                </div>
+                    <label>Maybe</label>
+                        <input type="radio" name="visit" value="maybe" >Maybe
+                    <!--requiredは一つで大丈夫-->
+               
+          <link class="link">
+                    <button type="submit">SEND</button>
+        </link>
+                
          </form>
-    </main>
-    
-    
+        </section>
+   <footer>
+     <p>&copy;Lone Starfish</p>
+    </footer> 
+</div>   
 </body>
 </html>
