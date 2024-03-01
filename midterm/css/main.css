@@ -193,7 +193,6 @@ article {
 .facts li {
     margin-bottom: 0.2rem;
 }
-
 /* Contact form styles */
 .contact-section form {
     border: 2px solid #424242; /* Black border around the form only */
@@ -250,6 +249,12 @@ button[type="submit"] {
     width: max-content;
     }
     /*送信ボタン*/
+
+    /* Contact heading styles */
+.contact-heading {
+    margin: 1rem; /* Align the heading with the form's border */
+}
+    
 
 footer{
     text-align: right;
