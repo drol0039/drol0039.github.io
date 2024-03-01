@@ -226,6 +226,7 @@ article {
 .contact-section .radio-buttons legend {
     padding: 0; /* Remove padding from legend */
     margin-bottom: 5px; /* Add some margin below the legend */
+    display: flex
 }
 
 /* Button styles */
