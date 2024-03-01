@@ -63,6 +63,7 @@ header h1{
     text-shadow: 2px 2px 2px rgb(16, 152, 147);
     margin: 0%;
     margin-top: 50px;
+    font-weight: normal;
     /*position: center /*absolute;*/
     /*bottom: 10px;
     left: 50px;
@@ -72,23 +73,34 @@ header h1{
 
 .nav ul{
     list-style-type: none;
-    padding: 0;
+    padding: 0.3rem;
     margin: 0;
     display: flex;
     justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 30px;
+    
     /*display: inline-block;
     justify-content:space-around ;
-    align-content:space-evenly;
+    /align-content:space-evenly;
+     align-content:space-evenly;
     border-right: 1px;
     bottom: 0;
     width: 100%;
     padding: 5px;*/
 }
     
-nav ul li{
+nav > ul >li:not(:last-child){
     margin: 0 1rem;
     position: relative;
-    padding: 0.5px;
+    border-right:1px solid #424242;
+    /*padding-right: 2.5rem;*/
+    text-decoration: none;
+    display: inline-block;
+    padding-right: 70px;
+    padding-left: 10px;
+    /*text-align: center;
+    align-content:space-evenly;*/
 }
     /*position: relative;
     display: flex;
@@ -107,14 +119,13 @@ nav ul li:nth-child(2) {
     border-right: 1px solid #424242; /* Set the color and width of the line */
 
 
-.nav ul li a{
-    text-decoration: none;
-    color: #424242;
+/*.nav ul li a{
+    /*text-decoration: none;*/
+    /*color: #424242;
     font-size: 1rem;
     padding: 0.5rem;
     display: block;
-    border-right: 1px solid #424242;
-    display: flex-start;
+    /*border-right:1px solid #424242;*/
 
 }
     /*text-decoration: none;
