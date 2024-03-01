@@ -114,6 +114,8 @@ nav ul li:nth-child(2) {
     padding: 0.5rem;
     display: block;
     border-right: 1px solid #424242;
+    display: flex-start;
+
 }
     /*text-decoration: none;
     display: inline-block;
@@ -226,7 +228,6 @@ article {
 .contact-section .radio-buttons legend {
     padding: 0; /* Remove padding from legend */
     margin-bottom: 5px; /* Add some margin below the legend */
-    display: flex
 }
 
 /* Button styles */
