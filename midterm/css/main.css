@@ -1,39 +1,25 @@
 
+/* whole back groung-green*/
 html{
     background-color:#aad4cf;/*main back ground color*/
 }
-/*global styles*/
 
-/*.contactssection{
-    background-color: rgb(16, 152, 147);
-}*/
-
+/*below, about all body*/
 *{box-sizing:border-box;}
 
 body{font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.6;
-    margin: 0 15%;
+    margin: 0 12%;/*top 0, side 12%*/
     color: #424242;
-    padding: 0;
     background-color:#d4eae7;/*main light back ground color*/
     background-position: centter
     font-size: 16px;
 }
 
-h2{font-weight: bold;
+h2{font-weight: normal;
 }
-/*h1{color: white;}*/
-/*.main-container{ 
-    width: 90%;
-    height: 0;
-    padding: 1rem;
-    margin:auto;
-   /* background-repeat: no-repeat;
-    background-position:center*/
-    /*background-position: top*/
-    /*background-size: cover*/
 
-    /*hheader style*/
+/*wide img and title*/
 header {
     background: url("../images/lone-starfish-wide.jpg")no-repeat center;
     background-size: cover;
@@ -41,116 +27,36 @@ header {
     padding: 2em;
     height: 200px;
 }
-    /*position:relative;
-    height: 200px;
-    background-position: center;
-    background-color:#d4eae7;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /*水平方向中央揃え*/
+    /*justify-content: center; /*水平方向中央揃え*/
     /*align-items: center;/*垂直方向中央揃え*/
-
-
-/*.header-image{
-    width: 250px;
-    height:auto ;
-    margin: 0 auto;
-}*/
 
 header h1{
     font-size: 3rem;
     color: #fff;
-    text-shadow: 2px 2px 2px rgb(16, 152, 147);
     margin: 0%;
     margin-top: 50px;
     font-weight: normal;
-    /*position: center /*absolute;*/
-    /*bottom: 10px;
-    left: 50px;
-    /transform: translateX(-50%);*/
 }
-    /*navigation style*/
-
+/*home-story-contact*/
 .nav ul{
-    list-style-type: none;
-    padding: 0.3rem;
-    margin: 0;
     display: flex;
-    justify-content: space-around;
-    padding-left: 20px;
-    padding-right: 30px;
-    
-    /*display: inline-block;
-    justify-content:space-around ;
-    /align-content:space-evenly;
-     align-content:space-evenly;
-    border-right: 1px;
-    bottom: 0;
-    width: 100%;
-    padding: 5px;*/
 }
-    
-nav > ul >li:not(:last-child){
-    margin: 0 1rem;
-    position: relative;
-    border-right:1px solid #424242;
-    /*padding-right: 2.5rem;*/
-    text-decoration: none;
-    display: inline-block;
-    padding-right: 70px;
-    padding-left: 10px;
-    /*text-align: center;
-    align-content:space-evenly;*/
+.nav li{
+    width:100px;
+    list-style-type:none;            /* リストに表示される「●」を非表示*/
+    border-right:1px solid #424242;   /* 右に区切り線を表示*/
+    flex:auto;
+    justify-content: space-around; /*両端を含む均等に割り付け*/
+    padding-left: 10%;
 }
-    /*position: relative;
-    display: flex;
-    list-style-type: none; 
-    justify-content: space-around;
-    text-align: center;
-    width: 1px
-    height:60%
-    background-color: ;rgba(255, 255, 255, 0.7)  
-    padding: 0.5rem;
-    margin: 0;*/
-
-/* Add vertical lines between nav items except for the last one using :nth-child */
-/*nav ul li:nth-child(1),
-nav ul li:nth-child(2) {
-    border-right: 1px solid #424242; /* Set the color and width of the line */
-
-
-/*.nav ul li a{
-    /*text-decoration: none;*/
-    /*color: #424242;
-    font-size: 1rem;
-    padding: 0.5rem;
-    display: block;
-    /*border-right:1px solid #424242;*/
-
+li:last-child{
+    border-right:none;
+    justify-content: space-around; /*水平方向中央揃え*/
+    padding-left: 10%; 
 }
-    /*text-decoration: none;
-    display: inline-block;
-    font-size: 1rem;
-    padding: 0.5rem;
-    border-right: 1px solid #424242;
-    /*width: 100%;*/
-    /*border-right: 1px solid #424242;*/
-    /*text-align: center;
-    color: #424242;*/
-
-Main content container 
-.main-container {
-    width: 80%;
-    margin: 20px auto;
-    background-color: #cde7e0; /* Lighter green background for content */
-    padding: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 1rem;
-}
-
 nav ul li a:hover{
     text-decoration: underline;
-    color: rgb(16, 152, 147);
+    color: rgb(16, 152, 147);/*dark green*/
 }
 
 nav a:last-child{
@@ -158,19 +64,11 @@ nav a:last-child{
 }
 
 .main-container>{
-    background-color: #e9e6d3;
-    width: 90%;
-    box-shadow: 0 4px 8px #424242;
     padding: 1rem;
     margin: auto;
-    font-weight: bold;
 }
 
-/*.main-container >* {
-    padding: 1rem;
-    margin: 0%;}*/
-
-/*article styles*/
+/*article*/
 article {
     padding: 1rem;
     margin: 0;
@@ -184,35 +82,38 @@ article {
     height: auto;
 }
 
-/*facts sectiion styles*/
+/*facts about starfish*/
 .facts{
-    /*white background for facts box*/
     padding: 1rem;
     margin-top: 1rem;
 }
-  /* Clearfix: after the floated elements to clear the float */
-  .clearfix::after {
+
+ .clearfix::after {
     content: "";
     display: table;
-    clear: both;
+    clear: both; /* Clearfix: フロート要素の後にフロートをクリアする */
 }
 .facts ul {
-    list-style-type: disc;　/*dot*/
-    margin-left: 10px;
+    list-style-type: disc; /*disc = dot*/
+    margin-left: 1em;
+    line-height: 1.5em;
+    text-align: left;
+
 }
 
-.facts li {
-    margin-bottom: 0.2rem;
+.facts ul li {
+    text-align: left;
 }
-/* Contact form styles */
+
+/* contact form */
 .contact-section form {
-    border: 2px solid #424242; /* Black border around the form only */
+    border: 2px solid #424242; /* border line around the while form */
     padding: 1rem;
     background-color: #cde7e0; /* Maintain the background color for the form */
     margin: 1rem;
 }
 
-/* Update the input and textarea styles to remove the outer border */
+/* important!入力およびテキストエリアのスタイルを更新して外側の境界線を削除 */
 .contact-section input,
 .contact-section textarea,
 .contact-section button,
@@ -225,14 +126,14 @@ article {
 .contact-section input[type="text"],
 .contact-section input[type="email"],
 .contact-section textarea {
-    width: 100% /*calc(100% - 16px); /* Adjust width to account for padding */
+    width: 100% 
 }
 
-/* Radio button fieldset styles */
+/* Radio button yes-no-maybe */
 .contact-section .radio-buttons {
     border: none; /* Remove border from fieldset */
     padding: 0; /* Remove padding from fieldset */
-    margin-bottom: 10px; /* Keep the margin for spacing */
+    margin-bottom: 10px; /* for spacing */
 }
 
 .contact-section .radio-buttons legend {
@@ -242,15 +143,12 @@ article {
 
 /* Button styles */
 .contact-section button {
-    /* Button background */
-     /* Button text color */
-    ; /* Button padding */
-    text-align: center; /* Center the text inside the button */
-    display: block; /* Make the button a block element */
-    width: 70px; /* Adjust the width as necessary */
-    margin-bottom: 0; /* Remove the bottom margin for the button */
+    text-align: center; /* ボタン内のテキストを中央に配置 */
+    display: block; /* ボタンをブロック要素にする */
+    width: 70px; 
+    margin-bottom: 0; /* ボタンの下余白を削除 */
 }
-
+ /*send button*/
 button[type="submit"] {
     padding: 1em 1em;
     color: #424242;
@@ -259,14 +157,12 @@ button[type="submit"] {
     cursor: pointer;
     width: max-content;
     }
-    /*送信ボタン*/
-
-    /* Contact heading styles */
+   
+    /* contact heading */
 .contact-heading {
-    margin: 1rem; /* Align the heading with the form's border */
+    margin: 2rem; /* 見出しをフォームの境界線に揃えるr */
 }
-    
-
+ /*copy rights*/
 footer{
     text-align: right;
     color: #424242;
@@ -275,10 +171,6 @@ footer{
     margin-bottom: 1rem;;
 }
 
-    /*justify-content: flex-end;
-    width: 100%;
-    box-sizing: border-box;
-    border-top: 1px;*/
     
     
 
