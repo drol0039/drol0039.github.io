@@ -12,8 +12,7 @@ body{font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0 12%;/*top 0, side 12%*/
     color: #424242;
     background-color:#d4eae7;/*main light back ground color*/
-    background-position: centter
-    font-size: 16px;
+    background-position: centter;
 }
 
 h2{font-weight: normal;
@@ -85,7 +84,7 @@ article {
 }
  .facts ul {
     list-style-type: disc; /*disc = dot*/
-    padding-left: 5px 10px 10px 30px; /*top bottom right left*/
+    padding: 5px 10px 10px 30px; /*top bottom right left*/
     /*margin-left: 1rem;*/
     line-height: 1.5em; /*行間*/
 } /*text-align: left;は必要ない*/

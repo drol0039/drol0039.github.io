@@ -41,11 +41,11 @@
     　　</section>
 
        <h2 class="section-hedding">Contact to Learn More</h2>
-        <section id="contacts" class="contact-section">
-            
-            
-            <form action=""method="post">
+        <div id="contacts" class="contact-section">
+                 
+            <form action=""method="post"> 
             <!--<form action="your-server-side-handler" method="post">-->
+            <!-- ""=this time only, it's for practice-->
                 <label for="name">Your Name</label> 
                 <input type="text" id="name" name="name" required>
            
@@ -53,7 +53,7 @@
                 <input type="email" id="email" name="email" required>
             
                 <label>Your Message</label>
-                <textarea type="text" id="message" name="message" required></textarea>
+                <textarea name="message" id="message" name="message" required></textarea>
 
 
                 <fieldset class="radio-buttons">
@@ -69,15 +69,13 @@
                         <input type="radio" name="visit" value="maybe">
                     <!--requiredは一つで大丈夫-->
                 </fieldset>
-          <link class="link">
-                    <button type="submit">SEND</button>
-          </link>
-                
-         </form>
-        </section>
+          
+                <button type="submit">SEND</button>
+            
+            </form>
+        </div>
         <footer>
             <p>&copy;Lone Starfish</p>
-        </footer> 
-</div>   
+        </footer>   
 </body>
 </html>
