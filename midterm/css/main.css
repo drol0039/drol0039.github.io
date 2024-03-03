@@ -27,8 +27,6 @@ header {
     padding: 2em;
     height: 200px;
 }
-    /*justify-content: center; /*水平方向中央揃え*/
-    /*align-items: center;/*垂直方向中央揃え*/
 
 header h1{
     font-size: 3rem;
@@ -40,6 +38,7 @@ header h1{
 /*home-story-contact*/
 .nav ul{
     display: flex;
+    padding-top: 0;
 }
 .nav li{
     width:100px;
@@ -48,14 +47,14 @@ header h1{
     flex:auto;
     justify-content: space-around; /*両端を含む均等に割り付け*/
     padding-left: 10%;
+    margin-right: 20px;
 }
 li:last-child{
     border-right:none;
     justify-content: space-around; /*水平方向中央揃え*/
-    padding-left: 10%; 
 }
 nav ul li a:hover{
-    text-decoration: underline;
+    text-decoration: none;
     color: rgb(16, 152, 147);/*dark green*/
 }
 
@@ -63,15 +62,11 @@ nav a:last-child{
     border-right: none;
 }
 
-.main-container>{
-    padding: 1rem;
-    margin: auto;
-}
-
 /*article*/
 article {
     padding: 1rem;
     margin: 0;
+    padding-bottom: 0;
 }
 
 .article-image {
@@ -86,57 +81,58 @@ article {
 .facts{
     padding: 1rem;
     margin-top: 1rem;
+    padding-bottom: 0;
 }
-
- .clearfix::after {
-    content: "";
-    display: table;
-    clear: both; /* Clearfix: フロート要素の後にフロートをクリアする */
-}
-.facts ul {
+ .facts ul {
     list-style-type: disc; /*disc = dot*/
-    margin-left: 1em;
-    line-height: 1.5em;
-    text-align: left;
+    padding-left: 5px 10px 10px 30px; /*top bottom right left*/
+    /*margin-left: 1rem;*/
+    line-height: 1.5em; /*行間*/
+} /*text-align: left;は必要ない*/
 
+ .facts ul li {
+    text-align: left;/*下の枠に影響。重要*/
+    padding-left: 10px;
 }
 
-.facts ul li {
-    text-align: left;
-}
+ .section-hedding{
+    margin-left: 1rem;
+    margin-top: 0;
+ }
 
 /* contact form */
-.contact-section form {
+  .contact-section form {
     border: 2px solid #424242; /* border line around the while form */
     padding: 1rem;
     background-color: #cde7e0; /* Maintain the background color for the form */
     margin: 1rem;
 }
 
+
 /* important!入力およびテキストエリアのスタイルを更新して外側の境界線を削除 */
-.contact-section input,
-.contact-section textarea,
-.contact-section button,
-.radio-buttons {
-    border: none; /* Remove individual borders for inputs, textarea, and button */
+ .contact-section input,
+ .contact-section textarea,
+ .contact-section button,
+ .radio-buttons {
+    border: none; /* 入力、テキストエリア、ボタンの個々の境界線を削除 */
     padding: 8px;
     margin-bottom: 10px; /* Keep the margin for spacing */
 }
 
-.contact-section input[type="text"],
-.contact-section input[type="email"],
-.contact-section textarea {
+ .contact-section input[type="text"],
+ .contact-section input[type="email"],
+ .contact-section textarea {
     width: 100% 
 }
 
 /* Radio button yes-no-maybe */
-.contact-section .radio-buttons {
+ .contact-section .radio-buttons {
     border: none; /* Remove border from fieldset */
     padding: 0; /* Remove padding from fieldset */
-    margin-bottom: 10px; /* for spacing */
+    margin-bottom: 10px; /* スペースのため */
 }
 
-.contact-section .radio-buttons legend {
+ .contact-section .radio-buttons legend {
     padding: 0; /* Remove padding from legend */
     margin-bottom: 5px; /* Add some margin below the legend */
 }
@@ -159,7 +155,7 @@ button[type="submit"] {
     }
    
     /* contact heading */
-.contact-heading {
+ .contact-heading {
     margin: 2rem; /* 見出しをフォームの境界線に揃えるr */
 }
  /*copy rights*/
@@ -171,7 +167,8 @@ footer{
     margin-bottom: 1rem;;
 }
 
-    
+    /*justify-content: center; /*水平方向中央揃え*/
+    /*align-items: center;/*垂直方向中央揃え*/
     
 
   
